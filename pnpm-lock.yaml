@@ -14,6 +14,12 @@ dependencies:
   '@fontsource-variable/noto-serif-display':
     specifier: ^5.0.21
     version: 5.0.21
+  '@fontsource/ibm-plex-mono':
+    specifier: ^5.0.13
+    version: 5.0.13
+  '@fontsource/iosevka-aile':
+    specifier: ^5.0.11
+    version: 5.0.11
   astro:
     specifier: ^4.7.1
     version: 4.7.1(typescript@5.4.5)
@@ -619,6 +625,14 @@ packages:
 
   /@fontsource-variable/noto-serif-display@5.0.21:
     resolution: {integrity: sha512-TOizzmg2PBtbD1dBGWJabTEhXtKrX2KfkQgFKnbuRcAnzVUv8cJC+9R4hm4/aLVz8tnaoyKSggxAdc91npFAuA==}
+    dev: false
+
+  /@fontsource/ibm-plex-mono@5.0.13:
+    resolution: {integrity: sha512-gtlMmvk//2AgDEZDFsoL5z9mgW3ZZg/9SC7pIfDwNKp5DtZpApgqd1Fua3HhPwYRIHrT76IQ1tMTzQKLEGtJGQ==}
+    dev: false
+
+  /@fontsource/iosevka-aile@5.0.11:
+    resolution: {integrity: sha512-uK87Z0bhEwoegWw5OWMGHkyXCQfB5Y1oA9lH1c25S0AaMBSWxMGRQG5X6q6VYPlTk+/+/QrQQkPRoF05RGYIgQ==}
     dev: false
 
   /@img/sharp-darwin-arm64@0.33.3:
