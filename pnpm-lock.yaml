@@ -8,6 +8,9 @@ dependencies:
   '@astrojs/check':
     specifier: ^0.6.0
     version: 0.6.0(typescript@5.4.5)
+  '@fontsource-variable/noto-serif-display':
+    specifier: ^5.0.21
+    version: 5.0.21
   astro:
     specifier: ^4.7.1
     version: 4.7.1(typescript@5.4.5)
@@ -587,6 +590,10 @@ packages:
     requiresBuild: true
     dev: false
     optional: true
+
+  /@fontsource-variable/noto-serif-display@5.0.21:
+    resolution: {integrity: sha512-TOizzmg2PBtbD1dBGWJabTEhXtKrX2KfkQgFKnbuRcAnzVUv8cJC+9R4hm4/aLVz8tnaoyKSggxAdc91npFAuA==}
+    dev: false
 
   /@img/sharp-darwin-arm64@0.33.3:
     resolution: {integrity: sha512-FaNiGX1MrOuJ3hxuNzWgsT/mg5OHG/Izh59WW2mk1UwYHUwtfbhk5QNKYZgxf0pLOhx9ctGiGa2OykD71vOnSw==}
