@@ -1,11 +1,20 @@
 ---
-import HeroSection from '@/components/sections/hero-section.astro';
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
+import HeroSection from "@/components/sections/hero-section.astro";
+import AboutThisCreationSection from "@/components/sections/about-this-creation-section.astro";
+import AuthenticitySection from "@/components/sections/authenticity-section.astro";
+import IncludesSection from "@/components/sections/includes-section.astro";
+import PaymentMethodsSection from '@/components/sections/payment-methods-section.astro'
+import AboutmeSection from '@/components/sections/aboutme-section.astro'
 ---
 
-<Layout title="Welcome to Astro.">
-	<main class="bg-bgPrimary min-h-dvh uppercase">
-		<HeroSection />
-	</main>
+<Layout title="Hablando con tu cuerpo">
+  <main class="bg-bgPrimary min-h-dvh uppercase">
+    <HeroSection />
+    <AuthenticitySection />
+    <AboutThisCreationSection />
+    <IncludesSection />
+	<PaymentMethodsSection />
+	<AboutmeSection />
+  </main>
 </Layout>
-
