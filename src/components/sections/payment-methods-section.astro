@@ -1,0 +1,140 @@
+<section class="text-brown pb-16 tracking-widest text-center">
+  <div class="relative w-full">
+    <img
+      class="absolute w-full h-full object-cover"
+      src="/about-this-creation-bg.webp"
+      alt=""
+    />
+    <div class="relative z-10 py-6">
+      <h2 class="text-wine font-noto text-6xl tracking-[0.5rem]">
+        VALOR Y METODOS DE PAGO
+      </h2>
+      <h3 id="pre-lunch-title" class="font-semibold text-2xl">
+        Precios prelanzamiento hasta 20/5/2024 (Argentina - UTC-03:00)
+      </h3>
+    </div>
+  </div>
+
+  <h3 class="text-2xl italic py-8">
+    Valor especial únicamente para residentes en Argentina
+  </h3>
+  <div class="font-bold flex flex-col gap-4 items-center">
+    <p class="text-3xl">
+      1 pago - <span class="price-argentina-discount"></span>
+      <span class="price-argentina-full"></span>
+    </p>
+    <a
+      class="text-whiteVariation bg-wine px-8 py-4 underline underline-offset-4 rounded-full font-normal"
+      href="https://siendoinfinita.tiendup.com/e/hablando-con-tu-cuerpo-0"
+      rel="noopener noreferer"
+      target="_blank"
+      >pago full</a
+    >
+
+    <p class="text-3xl">
+      4 pagos mensuales de <span class="price-monthly-argentina-discount"
+      ></span>
+      <span class="price-monthly-argentina-full"></span>
+    </p>
+    <p class="font-semibold">(mayo - junio - julio - agosto)</p>
+    <a
+      class="text-whiteVariation bg-wine px-8 py-4 underline underline-offset-4 rounded-full font-normal"
+      href="https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=2c9380848f3dadad018f500dbcce03c1"
+      rel="noopener noreferer"
+      target="_blank"
+      >plan de pago</a
+    >
+    <div class="border-2 border-brown w-[30%] my-4 mx-auto"></div>
+    <h3 class="text-2xl italic font-normal py-4">Desde el exterior</h3>
+    <p class="text-3xl">
+      1 pago - <span class="price-exterior-discount"></span>
+      <span class="price-exterior-full"></span>
+    </p>
+    <a
+      class="text-whiteVariation bg-wine px-8 py-4 underline underline-offset-4 rounded-full font-normal"
+      href="https://siendoinfinita.tiendup.com/e/hablando-con-tu-cuerpo-0"
+      rel="noopener noreferer"
+      target="_blank"
+      >pago full</a
+    >
+
+    <p class="text-3xl">
+      4 pagos mensuales de <span class="price-monthly-exterior-discount"></span>
+      <span class="price-monthly-exterior-full"></span>
+    </p>
+    <p class="font-semibold">(mayo - junio - julio - agosto)</p>
+    <a
+      class="text-whiteVariation bg-wine px-8 py-4 underline underline-offset-4 rounded-full font-normal"
+      href="https://www.paypal.com/webapps/hermes?token=1JC15875ER495243U&useraction=commit"
+      rel="noopener noreferer"
+      target="_blank"
+      >plan de pago</a
+    >
+  </div>
+</section>
+<script>
+  const preLunchTitle = document.querySelector(
+    "#pre-lunch-title"
+  ) as HTMLTitleElement;
+  const argentinaDiscount = document.querySelector(".price-argentina-discount");
+  const argentinaFull = document.querySelector(".price-argentina-full");
+  const monthlyArgentinaDiscount = document.querySelector(
+    ".price-monthly-argentina-discount"
+  );
+  const monthlyArgentinaFull = document.querySelector(
+    ".price-monthly-argentina-full"
+  );
+  const exteriorDiscount = document.querySelector(".price-exterior-discount");
+  const exteriorFull = document.querySelector(".price-exterior-full");
+  const monthlyExteriorDiscount = document.querySelector(
+    ".price-monthly-exterior-discount"
+  );
+  const monthlyExteriorFull = document.querySelector(
+    ".price-monthly-exterior-full"
+  );
+
+  const actualdate = new Date();
+  const limitdate = new Date("2024-05-21T03:00:00.000Z");
+
+  if (actualdate < limitdate) {
+    if (argentinaDiscount && argentinaFull) {
+      argentinaDiscount.innerHTML = "$180.000 /";
+      argentinaFull.innerHTML = "$250.000";
+      argentinaFull.classList.add("line-through");
+    }
+    if (monthlyArgentinaDiscount && monthlyArgentinaFull) {
+      monthlyArgentinaDiscount.innerHTML = "$50.000 /";
+      monthlyArgentinaFull.innerHTML = "$70.000";
+      monthlyArgentinaFull.classList.add("line-through");
+    }
+    if (exteriorDiscount && exteriorFull) {
+      exteriorDiscount.innerHTML = "$185 USD /";
+      exteriorFull.innerHTML = "$265 USD";
+      exteriorFull.classList.add("line-through");
+    }
+    if (monthlyExteriorDiscount && monthlyExteriorFull) {
+      monthlyExteriorDiscount.innerHTML = "$55 USD /";
+      monthlyExteriorFull.innerHTML = "$75 USD";
+      monthlyExteriorFull.classList.add("line-through");
+    }
+  } else {
+    if (preLunchTitle) {
+      preLunchTitle.style.display = "none";
+    }
+    if (
+      argentinaFull &&
+      exteriorFull &&
+      monthlyArgentinaFull &&
+      monthlyExteriorFull
+    ) {
+      argentinaFull.classList.remove("line-through");
+      exteriorFull.classList.remove("line-through");
+      monthlyArgentinaFull.classList.remove("line-through");
+      monthlyExteriorFull.classList.remove("line-through");
+      argentinaFull.innerHTML = "$250.000";
+      exteriorFull.innerHTML = "$265 USD";
+      monthlyArgentinaFull.innerHTML = "$70.000";
+      monthlyExteriorFull.innerHTML = "$75 USD";
+    }
+  }
+</script>
